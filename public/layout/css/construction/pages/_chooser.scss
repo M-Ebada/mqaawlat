@@ -1,0 +1,17 @@
+.choose-branch{
+    .chooser{
+        height: 100vh;
+        .branch{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            &.prim{
+                background-color: $mainColor;
+            }
+            &.sec{
+                background-color: #9e6a45;
+            }
+        }
+    }
+}

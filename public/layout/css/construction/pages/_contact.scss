@@ -1,0 +1,72 @@
+.contactpage{
+    
+    .header{
+        background: $mainColor;
+        color: #FFF;
+        .top-holder{
+            width: 80%;
+            @media(max-width:650px){
+                width: 100%;
+            }
+            .small{
+                font-size: 18px;
+            }
+        }
+        .liner{
+            transform: translateX(-40%);
+        }
+    }
+
+    .cont-frm{
+        label{
+            font-weight: normal;
+            font-size: 17px;
+        }
+        .form-control{
+            background: transparent;
+            color: #FFF;
+        }
+        select{
+            option{
+                background: #000c20;
+            }
+        }
+    }
+
+    .contacts-sections{
+        .contact-holder{
+            color: #FFF;
+            padding: 0 60px;
+            height: 385px;
+            transition: 0.3s;
+            &:hover{
+                opacity: 0.8;
+            }
+            .title{
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .small{color: #E8EBEF;}
+        }
+    }
+
+    .team-socials{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .soc{
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #F3F3F3;
+            margin: 4px;
+            &:hover{
+                background-color: rgb(211, 211, 211);
+            }
+        }
+    }
+    
+}

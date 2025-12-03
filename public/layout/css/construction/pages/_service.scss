@@ -1,0 +1,36 @@
+.servicepage{
+    .header{
+        .category{
+            display: inline-block !important;
+            background: #3C67FF;
+            color: #FFF;
+            padding: 18px;
+            border-radius: 55px;
+        }
+    }
+    .head-img{
+        width: 100%;
+        height: 480px;
+        @media(max-width:550px){
+            height: 380px;
+        }
+    }
+
+    .custom-container{
+        width: 50%;
+        margin: auto;
+        @media(max-width:720px){
+            width: 80%;
+        }
+        @media(max-width:520px){
+            width: 90%;
+        }
+        @media(max-width:450px){
+            width: 95%;
+        }
+    }
+
+    .similars{
+        background: #F7F8FA;
+    }
+}

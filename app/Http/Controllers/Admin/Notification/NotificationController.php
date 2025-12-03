@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Http\Controllers\Admin\Notification;
+
+use App\Enums\NotificationEnum;
+use App\Http\Controllers\Controller;
+use App\Models\Order;
+use Auth;
+use Illuminate\Http\Request;
+
+class NotificationController extends Controller
+{
+    public function index()
+    {
+        $notifications = Auth::user()->notifications()->latest()->take(50)->get();
+        return view("admin.global.notifications")->with([
+            "notifications" => $notifications
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $notification = Auth::user()->notifications()->where("id", $id)->first();
+
+        $notification->markAsRead();
+
+        return $this::sendSuccessResponse([
+            "redirect_url" => self::notificationRedirectUrl($notification),
+            "remaining_notification" => Auth::user()->unreadNotifications()->count(),
+        ]);
+    }
+
+    private static function notificationRedirectUrl($notification): string|null
+    {
+        $redirect_url = null;
+        if ($notification->data['type'] == NotificationEnum::NEW_USER_REGISTER) {
+            $redirect_url = route("admin.user.show", [json_decode($notification->data["user"])->id, 'type' => "overview"]);
+        }
+        return $redirect_url;
+    }
+
+}

@@ -1,0 +1,26 @@
+{
+  "_bootstrap-847735d7.js": {
+    "file": "assets/bootstrap-847735d7.js"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-3de702be.js",
+    "imports": [
+      "_bootstrap-847735d7.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/front.js": {
+    "file": "assets/front-9b06fd4e.js",
+    "imports": [
+      "_bootstrap-847735d7.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/front.js"
+  },
+  "resources/sass/backend/app.scss": {
+    "file": "assets/app-e238e492.css",
+    "isEntry": true,
+    "src": "resources/sass/backend/app.scss"
+  }
+}

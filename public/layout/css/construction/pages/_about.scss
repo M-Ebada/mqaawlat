@@ -1,0 +1,92 @@
+.aboutpage{
+    .head-parent{
+        position: relative;
+        .lift{
+            position: absolute;
+            left: 64%;
+            top: 70%;
+        }
+    }
+
+    .stats{
+        .stat{
+            .title{
+                color: #001943;
+                font-size: 88px;
+                font-weight: bold;
+                .sub{
+                    font-size: 50px;
+                }
+            }
+            .labl{
+                color: #5A6A83;
+            }
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                left: 100%;
+                top: 0;
+                background: aliceblue;
+            }
+        }
+    }
+
+    .about-section{
+        .section-head{
+            .top-h{
+                color: #563AFF;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .accrd-file{
+        background: linear-gradient(90deg, #3C67FF 9.21%, #4753C9 92.1%);
+        color: #FFF;
+        .title{
+            color: #F7BC16;
+        }
+    }
+
+    .locations-section{
+        background: #F7F7FC;
+        cursor: pointer;
+        .location{
+            padding-bottom: 25px;
+            border-bottom: 1px solid #DCDDEB;
+            margin-bottom: 16px;
+            .small{
+                display: none;
+            }
+            .title{
+                font-size: 35px;
+                color: #A0A3BD;
+            }
+            .contact{
+                display: none !important;
+                transition: 0.3s linear;
+                &:hover{
+                    transform: translateY(-4px);
+                    opacity: 0.9;
+                }
+            }
+            &.active{
+                .small,.contact{
+                    display: flex !important;
+                }
+                .title{
+                    color: #211F54;
+                }
+            }
+        }
+        .location-imger{
+            height: 500px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 18px;
+        }
+    }
+}
