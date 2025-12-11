@@ -20,7 +20,7 @@ class WebController extends Controller
 {
     public function index()
     {
-        $categories = Category::query()->where('status', 1)->orderByDesc('id')->get();
+        $services = Product::query()->where('status', 1)->orderByDesc('id')->get();
 
         $reviews = Testmonial::query()->where('status' , 1)->get();
 
@@ -29,7 +29,7 @@ class WebController extends Controller
         $images = Gallery::query()->where('status',1)->latest()->take(10)->get();
 
         return view('web.pages.index')->with([
-            'categories' => $categories,
+            'services' => $services,
             'reviews'    => $reviews,
             'gs'         => $gs,
             "gallery"     => $images
@@ -38,10 +38,10 @@ class WebController extends Controller
 
     public function services()
     {
-        $categories = Category::query()->where('status', 1)->orderByDesc('id')->get();
+        $services = Product::query()->where('status', 1)->orderByDesc('id')->get();
 
         return view('web.pages.services')->with([
-            'categories'    => $categories
+            'services'    => $services
         ]);
     }
 
@@ -59,7 +59,7 @@ class WebController extends Controller
     {
         $service = Product::query()->with('category')->where('status',1)->where('slug', $slug)->firstOrFail();
         $gs = Helper::getGeneral();
-        $similars = Product::query()->where('status',1)->whereNotIn('id', [$service->id])->where('category_id',$service->category_id)->take(3)->get();
+        $similars = Product::query()->where('status',1)->whereNotIn('id', [$service->id])->take(3)->get();
         return view('web.pages.service')->with([
             'service'   => $service,
             'gs'    => $gs,

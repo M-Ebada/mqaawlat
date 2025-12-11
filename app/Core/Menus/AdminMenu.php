@@ -19,7 +19,7 @@ class AdminMenu
                 "title" => __("Categories"),
                 "route" => route('admin.category.index'),
                 "icon" => "layout-wtf",
-                "can" => true
+                "can" => false
             ],
             [
                 "title" => __("Services"),

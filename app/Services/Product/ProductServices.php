@@ -34,7 +34,6 @@ class ProductServices
                 'short_description' => $request->short_description,
                 'slug'  => Helper::getSlug($request->title['en']),
                 'keywords'  => $request->keywords,
-                'category_id' => $request->category_id,
             ]);
 
             if ($request->hasFile("image")) {
@@ -56,7 +55,6 @@ class ProductServices
                 'short_description' => $request->short_description,
                 'slug'  => Helper::getSlug($request->title['en']),
                 'keywords'  => $request->keywords,
-                'category_id' => $request->category_id,
             ]);
 
             if ($request->hasFile("image")) {

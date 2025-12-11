@@ -41,15 +41,6 @@
                 :col="12"
             />
 
-            <div class="form-group col-6 mt-5 child-category cats">
-                <label class="d-flex align-items-center fs-5 fw-bold mb-2 required">{{__("Choose Category")}}</label>
-                <select name="category_id" required data-control="select2" class="form-control form-control-lg form-control-solid" id="boarsd">
-                    <option value="" selected disabled>{{__('Choose An Option')}}</option>
-                    @foreach($categories as $category)
-                        <option value="{{$category->id}}">{{$category->title}}</option>
-                    @endforeach
-                </select>
-            </div>
 
             <x-text-input
                 col="12"

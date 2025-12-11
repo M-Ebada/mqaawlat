@@ -45,16 +45,6 @@
                     :model="$model"
                 />
     
-                <div class="form-group col-6 mt-5 child-category cats">
-                    <label class="d-flex align-items-center fs-5 fw-bold mb-2 required">{{__("Choose Category")}}</label>
-                    <select name="category_id" required data-control="select2" class="form-control form-control-lg form-control-solid" id="boarsd" required>
-                        <option value="" selected disabled>{{__('Choose An Option')}}</option>
-                        @foreach($categories as $category)
-                            <option @if($category->id == $model->category_id) selected @endif value="{{$category->id}}">{{$category->title}}</option>
-                        @endforeach
-                    </select>
-                </div>
-
                  <x-text-input
                     col="12"
                     :title="__('Keywords')"

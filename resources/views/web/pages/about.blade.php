@@ -28,10 +28,10 @@ $gs = \App\Helper\Helper::getGeneral();
                             {{__("Get to know us")}}
                         </p>
                         <h1 class="fw-bold black pb-3 wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.6s" data-wow-offset="100">
-                            {{$gs->title}} {{__("One of the most prestigious blacksmith workshops in the kingdom since 1998")}}
+                            {{$gs->title}} {{__("One of the most prestigious contracting companies in the kingdom since 1998")}}
                         </h1>
                         <p class="dim lead mb-5 pb-5 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.8s" data-wow-offset="100">
-                           {{__("Here, we combine expertise and craftsmanship to provide you with innovative metal solutions, including the manufacturing of doors, windows, staircases, and railings with the highest standards of quality and precision. Our professional modification and installation services ensure that our products fit your specific needs. We believe that every metal piece we create is a blend of safety and beauty, and we always strive to deliver our best to achieve customer satisfaction and exceed expectations")}}
+                           {{__("Al-Hassan for Contracting is a leading entity in the Kingdom of Saudi Arabia, merging extensive experience with innovation in construction, renovation, and finishing works. We believe that quality and adherence to deadlines are the foundation of any project's success, which is why we strive to provide integrated engineering solutions based on the highest professional standards. Our vision is to be the top choice in the contracting sector by efficiently meeting our clients' needs with professionalism, contributing to urban development, and enhancing customer satisfaction.")}}
                         </p>
     
                         <a href="{{route('web.contact')}}" class="btn btn-bg btn-primary wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="1s" data-wow-offset="100">
@@ -106,9 +106,9 @@ $gs = \App\Helper\Helper::getGeneral();
                             {{__("Leadership through diligence, determination, and adaptability")}}
                         </h2>
                         <p class="dim lead mb-4 pb-2">
-                           {{__("Our vision at Latifah Workshop is to be the first choice in the metalworks industry by offering products that combine innovation and high quality. We aim to contribute to raising design and execution standards to create a more beautiful and safe environment")}}
+                           {{__("We aim to be a leading entity in the contracting sector in the Kingdom by delivering professional services based on quality and innovation, efficiently meeting our clients' needs.")}}
                         </p>
-                        <img src="{{asset('layout/imgs/aa1.webp')}}" class="fit-img" />
+                        <img src="{{asset('layout/imgs/aa1.jpg')}}" class="fit-img" />
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s" data-wow-offset="100">
@@ -117,7 +117,7 @@ $gs = \App\Helper\Helper::getGeneral();
                             {{__("Providing excellence rooted in core values.")}}
                         </h2>
                         <p class="dim lead mb-4 pb-2">
-                            {{__("At Latifah Workshop, we strive to provide exceptional quality metal products that meet customer needs and exceed expectations, with a commitment to innovation in design and precision in execution. Our ambition is to expand our services to reach broader markets, build strong and sustainable partnerships, and contribute to the development of the metalworks sector in line with the latest global standards")}}
+                            {{__("Our mission is to provide integrated contracting solutions that adhere to high engineering standards, quality, and commitment, contributing to urban development and enhancing customer satisfaction.")}}
                         </p>
                         <img src="{{asset('layout/imgs/aa2.webp')}}" class="fit-img" />
                     </div>

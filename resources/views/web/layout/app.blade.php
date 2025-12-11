@@ -216,7 +216,7 @@ $dir = (app()->getLocale() == 'ar') ? 'rtl' : 'ltr';
         <div class="d-flex justify-content-between align-items-center navbar-holder flex-wrap pb-0">
             <div class="logo mb-2">
                 <a href="{{route('web.index')}}">
-                    <img src="{{$gs->siteLogo}}" class="logo" alt="logo" title="" width="100px" />
+                    <img src="{{asset('layout/imgs/logo-w.png')}}" class="logo" alt="logo" title="" width="100px" />
                 </a>
             </div>
                 

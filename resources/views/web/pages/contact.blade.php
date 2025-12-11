@@ -31,8 +31,7 @@
                         </h1>
 
                         <p class="small mb-4 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.8s" data-wow-offset="100">
-                            مهندسونا جاهزون للخطوة التالية نحو حلمك،
-                            نحن دائمًا هنا لمساعدتك في حالتك.
+                            {{__("Our engineers are ready for the next step towards your dream, we are always here to assist you in your case")}}
                         </p>
 
                         <div class="d-flex team-socials wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.4s" data-wow-offset="100">
@@ -76,7 +75,7 @@
                 {{__("Contact us directly")}}
             </h2>
             <p class="small text-center dim wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.8s" data-wow-offset="100">
-                يسعدنا الاستماع إليك مباشرة. اتصل بنا أو زرنا الآن
+                {{__("We are happy to hear from you directly. Contact us or visit us now")}}
             </p>
 
             <div class="row mt-5 pt-5 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">

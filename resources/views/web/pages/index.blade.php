@@ -29,15 +29,15 @@
     <div class="header mb-5">
         <div class="header-container position-relative w-100">
             <div class="w-100 h-100">
-                <img src="{{asset('layout/imgs/header.jpg')}}" class="header-back" />
+                <img src="{{asset('images/home-hero.webp')}}" class="header-back" />
                 <div class="overlay d-flex align-items-center pt-5 justify-content-center p-5">
                     <div class="">
                         <div>
                             <h1 class="fw-bolder text-center text-light mt-5 pt-4 mb-4 m-auto wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">
-                                <span class="highlight"> {{$gs->title}} </span> {{__("Metalworks – Quality with Mastery and an Artistic Touch")}}
+                                <span class="highlight"> {{$gs->title}} </span> {{__("Specialized in construction and finishing, providing high-standard solutions")}}
                             </h1>
                             <p class="lead text-light text-center wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0.5s" data-wow-offset="100">
-                                {{__("In a cozy workshop, we offer doors, windows, and iron staircases with innovative designs and professional installation services, providing you with metal solutions that combine security and beauty")}}
+                                {{__("Quality, Credibility, Commitment, Safety, Innovation, Customer Satisfaction.")}}
                             </p>
                 
                             <div class="d-flex justify-content-center mb-5 pb-4 wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.6s" data-wow-offset="100">
@@ -59,31 +59,23 @@
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
-                        <p class="slide"> {{__("Iron Doors")}} </p>
+                        <p class="slide"> {{__("Metal Works")}} </p>
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
-                        <p class="slide"> {{__("Stairs")}} </p>
+                        <p class="slide"> {{__("Interior and Exterior Finishing")}} </p>
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
-                        <p class="slide"> {{__("المظلات")}} </p>
+                        <p class="slide"> {{__("Insulation Works")}} </p>
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
-                        <p class="slide"> {{__("Contracting")}} </p>
+                        <p class="slide"> {{__("Electrical Works")}} </p>
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
-                        <p class="slide"> {{__("Containers")}} </p>
-                        <div class="dot">
-                            <i class="bi bi-asterisk"></i>
-                        </div>
-                        <p class="slide"> {{__("Trailers")}} </p>
-                        <div class="dot">
-                            <i class="bi bi-asterisk"></i>
-                        </div>
-                        <p class="slide"> {{__("Tanks")}} </p>
+                        <p class="slide"> {{__("Plumbing Works")}} </p>
                         <div class="dot">
                             <i class="bi bi-asterisk"></i>
                         </div>
@@ -137,9 +129,25 @@
     <div class="padd-sm services-section">
         <div class="container">
             <p class="fs-1 mb-5 fw-bold text-center wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">
-                {{__("Workshop services")}}
+                {{__("Our services")}}
             </p>
-            @include('web.partials.categories',['categories' => $categories])
+            <div class="row">
+                @foreach ($services as $service)
+                    @include('web.partials.service',['product' => $service])
+                @endforeach
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">
+                    <a href="https://latifa-metal.com" class="services-template">
+                        <img src="{{asset('layout/imgs/blacksmith.jpg')}}" class="fit-img" />
+                        <div class="overlay">
+                            <div class="talk">
+                                <p class="titlter fw-bold mb-1 fs-3">
+                                    {{__('Warsha Latifa Metalworks')}}
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 

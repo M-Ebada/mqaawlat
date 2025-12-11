@@ -6,11 +6,6 @@
 <div class="servicepage">
     <div class="contanier">
         <div class="header padd-sm">
-            <div class="d-flex justify-content-center wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">
-                <a href="{{route('web.category.show', $service->category_id)}}" class="category d-inline-block text-center m-auto mb-4">
-                    {{$service->category->title}}
-                </a>
-            </div>
             
             <h1 class="fw-bold black text-center mb-3 wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.6s" data-wow-offset="100">
                 {{$service->title}}
@@ -45,9 +40,6 @@
                     <h2 class="fw-bold black wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" data-wow-offset="100">
                         {{__("Similar Services")}}
                     </h2>
-                    <a href="{{route('web.category.show', $service->category_id)}}" class="btn btn-bg btn-primary wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.6s" data-wow-offset="100">
-                        {{__("show more")}}
-                    </a>
                 </div>
                 <div class="row">
                     @foreach ($similars as $product)
